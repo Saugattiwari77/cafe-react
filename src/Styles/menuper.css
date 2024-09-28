@@ -1,0 +1,159 @@
+.menuper-div{
+    display: flex;   
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.fnbtn{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap:5px;
+
+
+}
+#srch{
+    width:250px;
+    height: 40px;
+   
+    
+}
+.leftside-d{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    /* background-color: #ff7700; */
+    width:25%;
+}
+input[type = "text"]{
+font-size: 20px;
+margin-left: 0;
+padding-left: 10px;
+}
+.menu-srch{
+    padding:10px 20px;
+    border-radius: 6px;
+   
+   
+    font-size: 17px;
+    background-color:#ff7700;
+    color:white;
+
+}
+.rightside-d{
+    display: flex;
+    flex-direction: column;
+    width:75%;
+    /* background-color: #ddd; */
+    
+    
+}
+.rightside-d h2{
+text-align: center;
+
+font-size: 30px;
+margin-top: 10px;
+}
+
+.categories {
+    margin-top: 30px;
+    display: grid;
+    gap: 10px; 
+    justify-content: start;
+    /* align-items: start; */
+    /* margin-left: 50px; */
+    
+    
+}
+
+.categories .title {
+    grid-column: span 2; 
+    margin-bottom: 10px;
+   
+	 
+}
+
+.categories button {
+    font-size: 1rem;
+    padding: 7px 10px;
+    background: transparent;
+    color: #ddd;
+    border: 1px solid rgba(255, 119, 0, .3);
+    font-size: .9rem;
+	
+}
+
+.categories button:hover {
+    background: #3d3d3d;
+    color: rgba(255, 119, 0, 1);
+    border: 1px solid rgba(255, 119, 0, .3);
+}
+
+.categories button.active {
+    background: #ede;
+    color: rgba(255, 119, 0, 1);
+    border: 1px solid rgba(255, 119, 0, .3);
+}
+
+
+
+/* Container for the grid */
+.menu-wrap {
+    display: grid;
+    grid-template-columns: 1fr; /* One column by default (small screens) */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card__image img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+  }
+  
+  .card__info {
+    padding: 15px;
+    color:black;
+  }
+  
+  .card__info--title h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color:black;
+  }
+  
+  .card__info--price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color:black;
+    font-weight: bold;
+  }
+  
+  .checked {
+    color: #f1c40f;
+  }
+  
+  /* For medium screens (tablets) */
+  @media (min-width: 768px) {
+    .menu-wrap {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+  }
+  
+  /* For large screens (desktops) */
+  @media (min-width: 1024px) {
+    .menu-wrap {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Free grid based on screen size */
+    }
+  }
+  
+

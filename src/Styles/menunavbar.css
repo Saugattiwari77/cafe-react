@@ -1,0 +1,25 @@
+.mnav-div{
+    border-bottom: 1px solid white;
+    /* margin-bottom: 100px; */
+}
+.h-top{
+    display: flex;
+    justify-content: space-between;
+}
+.h-top h1{
+    margin-left: 60px;
+    color:white;
+}
+
+.h-top .logout{
+    margin-right: 100px;
+    height: 50px;
+    width:50px;
+    padding: 6px 10px;
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    border:none;
+  margin-top: 20px;
+
+}

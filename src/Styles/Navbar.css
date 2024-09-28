@@ -1,0 +1,140 @@
+a{
+    /* border:none; */
+    text-decoration: none;
+      color:white;
+    
+}
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #171717; 
+    /* padding:0 0 10% 10% ; */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-bottom:1px solid rgba(255, 255, 255, 0.121);
+  }
+  
+  .navbar-container.hidden {
+    transform: translateY(-100%); /* Move it out of view */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .navbar-container.visible {
+    transform: translateY(0); /* Move it into view */
+    opacity: 1; /* Make it visible */
+  }
+  
+
+
+
+
+
+
+.nav-bg{
+    width:100%;
+    height:100vh;
+    /* overflow: hidden; */
+    object-fit: cover;
+    
+}
+.nav-bgimg{
+    position: relative;
+    
+}
+.nav-bgimg::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    background-color:rgba(0, 0, 0, 0.71) ;
+}
+.nav-part{
+    position: absolute;
+    top:3%;
+    left:5%;
+    display: flex;
+    margin-left: 70px;
+    margin-top: -20px;
+   
+
+}
+.nav-wrap{
+    background-color: #171717;
+display: flex;
+justify-content: space-around;
+width:90%;
+/* padding-left: 10%;
+padding-right: 10%; */
+}
+ .lefts-part{
+    margin-left: 110px;
+
+ }
+
+
+.navbar-component ul{
+    display: flex;
+    margin-left: 450px;
+    margin-top: 30px;
+}
+.navbar-component ul li{
+    list-style: none;
+   
+    padding-left:80px;
+
+
+}
+.navbar-component ul li a{
+    text-decoration: none;
+    color:white;
+    /* font-weight: bold; */
+    font-size: 17px;
+    
+
+}
+.middle-part{
+    position: absolute;
+    top:30%;
+    left:5%; 
+    color:white;
+    margin-left: 80px;
+    margin-top: -100px;
+    
+}
+.middle-part h1{
+    font-size: 70px;
+    width:750px;
+    /* font-weight: bold; */
+
+
+}
+.middle-part p{
+    font-size: 20px;
+    width:500px;
+    margin-top: -20px;
+}
+.btn{
+    padding:10px 20px;
+    font-size: 20px;
+    margin-left: -10px;
+    border-radius: 5px;
+    
+    
+
+}
+#bn{
+    background-color: white;
+    color:#ff7700;
+}
+#ex{
+    margin-left: 30px;
+    border:1px solid #ff7700;
+    background:transparent;
+    color:white;
+}
+#ex:hover{
+    background-color: white;
+    color:#ff7700;
+}

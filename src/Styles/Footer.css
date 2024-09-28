@@ -1,0 +1,14 @@
+.ftrm-div{
+    background-color: rgba(54, 51, 51, 0.379);
+display: flex;
+justify-content: space-between;
+}
+.right-div{
+    margin-left: 100px;
+}
+.left-div{
+    margin-right: 200px;
+}
+.left-div p{
+    width:320px;
+}
